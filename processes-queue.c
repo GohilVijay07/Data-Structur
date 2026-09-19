@@ -14,7 +14,7 @@ int main()
     int val = 0;
     int count = 5;
 
-    // Insert all processes-queue
+    // Insert all processes into queue
     for (i = 0; i < 5; i++)
     {
         process_insert(q, &f, &r, process[i]);
