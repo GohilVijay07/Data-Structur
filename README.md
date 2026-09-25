@@ -1,94 +1,87 @@
-Data Structures Practical Programs in C
+📚 Data Structures Practical Programs in C
 
-Welcome to my Data Structures Practical Programs repository.
 
-This repository contains Data Structures practical programs implemented in the C programming language. The programs are written in a simple and beginner-friendly way for college practicals, lab assignments, viva preparation, and exam practice.
 
-About
 
-Subject: Data Structures
 
-Programming Language: C
 
-Type: Practical / Lab Programs
+A collection of Data Structures practical programs written in C for college/lab practice.
 
-Level: Beginner Friendly
+The programs cover Stack, Queue, Linked List, Sorting and Searching concepts.
 
-Programs: 1 to 17
-
-Practical Programs
+📌 Programs Included
 
 No.
 
-Program
+Practical
 
-Operations / Concept
+Main Topic
 
-1
+01
+
+Menu Driven Stack
 
 Stack
 
-Push, Pop, Peep, Modify, Display
+02
 
-2
+Menu Driven Double Stack
 
 Double Stack
 
-Push, Pop, Peep, Modify, Display
+03
 
-3
+Infix to Suffix Expression
 
-Infix to Suffix
+Stack / Expression
 
-Convert Infix Expression to Suffix using Stack
+04
 
-4
+Menu Driven Simple Queue
 
-Simple Queue
+Queue
 
-Insert, Delete, Modify, Display
+05
 
-5
+Menu Driven Double Queue
 
 Double Queue
 
-Insert, Delete, Modify, Display
+06
 
-6
+Menu Driven Circular Queue
 
 Circular Queue
 
-Insert, Delete, Modify, Display
-
-7
+07
 
 Process Queue
 
-Process Queue Implementation
+Queue
 
-8
+08
 
 Priority Queue
 
-Insert, Delete, Display
+Priority Queue
 
-9
+09
 
-Singly Linked List
+Menu Driven Singly Linked List
 
-Insert, Delete, Modify, Display
+Linked List
 
 10
 
-Singly Circular Linked List
+Menu Driven Singly Circular Linked List
 
-Insert, Delete, Modify, Display
+Circular Linked List
 
 11
 
-Doubly Linked List
+Menu Driven Doubly Linked List
 
-Insert, Delete, Modify, Display
+Doubly Linked List
 
 12
 
@@ -122,13 +115,13 @@ Sorting
 
 17
 
-Linear and Binary Search
+Linear & Binary Search
 
 Searching
 
-1. Stack
+🧩 Detailed Programs
 
-Stack follows the LIFO (Last In First Out) principle.
+01. Menu Driven Stack
 
 Operations
 
@@ -142,53 +135,43 @@ Modify
 
 Display
 
-Stack Overflow
+Concept
 
-Stack Underflow
+A Stack follows the LIFO (Last In, First Out) principle.
 
 Example
 
-Push: 10
-Push: 20
-Push: 30
+Push → Add an element
+Pop  → Remove the top element
+Peep → View an element
 
-Stack:
-
-30  <- Top
-20
-10
-
-2. Double Stack
-
-Double Stack implements two stacks using a single array.
+02. Menu Driven Double Stack
 
 Operations
 
-Push Stack 1
+Push
 
-Push Stack 2
+Pop
 
-Pop Stack 1
+Peep
 
-Pop Stack 2
-
-Peep Stack 1
-
-Peep Stack 2
-
-Modify Stack 1
-
-Modify Stack 2
+Modify
 
 Display
 
-Stack 1  --->       <---  Stack 2
+Concept
 
-[10][20][30][   ][70][60][50]
+Two stacks are maintained in a single array.
 
-3. Infix to Suffix Expression
+Stack 1  →  ←  Stack 2
 
-This program converts an infix expression into a suffix/postfix expression using a stack.
+This demonstrates how one array can be used for two stacks.
+
+03. Infix to Suffix Expression
+
+Concept
+
+This program converts an infix expression into a suffix (postfix) expression using a stack.
 
 Example
 
@@ -198,27 +181,17 @@ A+B*C
 Suffix:
 ABC*+
 
-Concepts
+Main Concepts
 
 Stack
 
-Push
+Operator precedence
 
-Pop
+Parentheses
 
-Peek
+Postfix expression
 
-Operator Precedence
-
-Operator Precedence
-
-^       Highest
-* /
-+ -
-
-4. Simple Queue
-
-Queue follows the FIFO (First In First Out) principle.
+04. Menu Driven Simple Queue
 
 Operations
 
@@ -230,22 +203,14 @@ Modify
 
 Display
 
-Queue Overflow
+Concept
 
-Queue Underflow
+A Queue follows the FIFO (First In, First Out) principle.
 
-Example
+Insertion → Rear
+Deletion  → Front
 
-Front                 Rear
-  |                     |
-  v                     v
-[10] [20] [30] [40] [50]
-
-The element inserted first is deleted first.
-
-5. Double Queue
-
-Double Queue allows insertion and deletion from both ends of the queue.
+05. Menu Driven Double Queue
 
 Operations
 
@@ -257,9 +222,13 @@ Modify
 
 Display
 
-6. Circular Queue
+Concept
 
-In a circular queue, the last position is connected back to the first position.
+A double-ended queue allows insertion and deletion from both ends.
+
+Front  ↔  Elements  ↔  Rear
+
+06. Menu Driven Circular Queue
 
 Operations
 
@@ -271,45 +240,47 @@ Modify
 
 Display
 
-Queue Overflow
+Concept
 
-Queue Underflow
+A circular queue connects the last position back to the first position.
 
-Circular movement is implemented using:
+Last Position
+      ↓
+First Position
 
-(rear + 1) % MAX
+This helps reuse empty positions in the queue.
 
-and
+07. Process Queue
 
-(front + 1) % MAX
+Concept
 
-7. Process Queue
+This program demonstrates processing of jobs/processes using a queue.
 
-This program implements a process queue.
+Processes are inserted into a queue and executed in sequence. If a process still has remaining work, it can be inserted again.
 
-Processes are inserted into a queue and executed in units. If a process still has remaining units after execution, it is inserted back into the queue.
+Main Concepts
 
-8. Priority Queue
+Queue
 
-A priority queue processes elements according to their priority.
+Process scheduling
 
-Priority Levels
+Re-insertion of unfinished process
+
+08. Priority Queue
+
+Concept
+
+A Priority Queue processes elements according to their priority.
+
+In this practical, three priority levels are used:
 
 Priority 1
 Priority 2
 Priority 3
 
-Operations
+The higher-priority queue is processed before the lower-priority queue.
 
-Insert
-
-Delete
-
-Display
-
-9. Singly Linked List
-
-A singly linked list consists of nodes connected using a next pointer.
+09. Menu Driven Singly Linked List
 
 Operations
 
@@ -323,42 +294,17 @@ Display
 
 Structure
 
-HEAD
- |
- v
-[10|*] -> [20|*] -> [30|NULL]
+[Data | Next] → [Data | Next] → [Data | NULL]
 
-10. Singly Circular Linked List
+Concept
 
-A singly circular linked list is similar to a singly linked list, but the last node points back to the first node.
+Each node contains:
 
-Operations
+Data
 
-Insert
+Address of the next node
 
-Delete
-
-Modify
-
-Display
-
-Structure
-
-       +----------------------+
-       |                      |
-       v                      |
-[10] -> [20] -> [30] --------+
- ^
- |
-HEAD
-
-11. Doubly Linked List
-
-A doubly linked list contains two pointers:
-
-Previous pointer
-
-Next pointer
+10. Menu Driven Singly Circular Linked List
 
 Operations
 
@@ -372,76 +318,92 @@ Display
 
 Structure
 
-NULL <- [10] <-> [20] <-> [30] -> NULL
+      ┌──────────────────────┐
+      ↓                      │
+[Data|Next] → [Data|Next] → [Data|Next]
+      ↑______________________│
+
+The last node points back to the first node.
+
+11. Menu Driven Doubly Linked List
+
+Operations
+
+Insert
+
+Delete
+
+Modify
+
+Display
+
+Structure
+
+NULL ← [Prev|Data|Next] ↔ [Prev|Data|Next] → NULL
+
+Each node contains:
+
+Previous node address
+
+Data
+
+Next node address
+
+🔃 Sorting Programs
 
 12. Insertion Sort
 
-Insertion Sort sorts an array by inserting each element into its correct position.
+Insertion Sort builds the sorted array one element at a time.
 
 Example
 
 Before:
-50 20 40 10 30
+5 3 4 1 2
 
 After:
-10 20 30 40 50
+1 2 3 4 5
 
-Basic Idea
+Complexity
 
-Take an element
-      |
-      v
-Compare with previous elements
-      |
-      v
-Shift larger elements
-      |
-      v
-Insert at correct position
+Best: O(n)
+
+Average: O(n²)
+
+Worst: O(n²)
 
 13. Merge Sort
 
-Merge Sort uses the Divide and Merge technique.
+Merge Sort divides the array into smaller parts and then merges them in sorted order.
 
-Basic Process
+Steps
 
-Array
-  |
-  v
 Divide
-  |
-  v
-Sort smaller parts
-  |
-  v
+  ↓
+Sort
+  ↓
 Merge
-  |
-  v
-Sorted Array
+
+Complexity
+
+O(n log n)
 
 14. Quick Sort
 
-Quick Sort uses a pivot to divide the array into smaller parts.
+Quick Sort selects a pivot and partitions the array around it.
 
-Basic Process
+Steps
 
-Array
-  |
-  v
 Select Pivot
-  |
-  v
+     ↓
 Partition
-  |
-  +------+
-  |      |
-  v      v
-Left   Right
-  |      |
-  +------+
-      |
-      v
-   Sorted
+     ↓
+Quick Sort Left & Right
+
+Complexity
+
+Average: O(n log n)
+
+Worst: O(n²)
 
 15. Radix Sort
 
@@ -453,88 +415,101 @@ Example
 045
 075
 090
-002
-024
 802
+024
+002
 066
 
-The sorting is performed according to:
+The program processes:
 
-Units
-  |
-  v
-Tens
-  |
-  v
-Hundreds
+Units digit
 
-This implementation is intended for non-negative integers.
+Tens digit
+
+Hundreds digit
+
+And so on
+
+Note: The given implementation is intended for non-negative integers.
 
 16. Heap Sort
 
-Heap Sort uses a heap data structure for sorting.
+Heap Sort uses a Heap data structure to sort the elements.
 
-Basic Process
+For ascending order, a Max Heap is used.
 
-Array
-  |
-  v
+Steps
+
 Build Max Heap
-  |
-  v
-Remove Maximum
-  |
-  v
+      ↓
+Move Maximum to End
+      ↓
 Heapify
-  |
-  v
-Sorted Array
+      ↓
+Repeat
 
-17. Linear and Binary Search
+Complexity
 
-This program implements both Linear Search and Binary Search.
+O(n log n)
+
+🔎 Searching Programs
+
+17. Linear Search & Binary Search
 
 Linear Search
 
-Linear Search checks each element one by one.
+Checks elements one by one.
 
+Array:
 10 20 30 40 50
 
-Search = 40
+Search:
+30
 
-10 -> 20 -> 30 -> 40
-                  ^
-                Found
+Result:
+Found
+
+Complexity
+
+O(n)
 
 Binary Search
 
 Binary Search repeatedly divides a sorted array into two parts.
 
-Important
+Sorted Array
+     ↓
+Find Middle
+     ↓
+Compare
+     ↓
+Search Left / Right
 
-The array must be sorted before performing Binary Search.
+Complexity
 
-10 20 30 40 50
+O(log n)
 
-Search = 40
+Important: Binary Search requires the array to be sorted.
 
-Middle = 30
-
-40 > 30
-
-Search right side
-
-40 50
-
-40 = Found
-
-Topics Covered
+📖 Topics Covered
 
 Stack
 
-Double Stack
+Push
+
+Pop
+
+Peep
+
+Modify
+
+Display
+
+Infix to Suffix
 
 Queue
+
+Simple Queue
 
 Double Queue
 
@@ -544,13 +519,15 @@ Process Queue
 
 Priority Queue
 
+Linked List
+
 Singly Linked List
 
 Singly Circular Linked List
 
 Doubly Linked List
 
-Infix to Suffix Conversion
+Sorting
 
 Insertion Sort
 
@@ -562,27 +539,29 @@ Radix Sort
 
 Heap Sort
 
+Searching
+
 Linear Search
 
 Binary Search
 
-How to Run
+⚙️ How to Run
 
-Step 1: Clone Repository
+1. Clone the Repository
 
 git clone https://github.com/GohilVijay07/Data-Structur.git
 
-Step 2: Open Repository
+2. Open the Repository
 
 cd Data-Structur
 
-Step 3: Compile a C Program
+3. Compile a Program
 
-Using GCC:
+For example:
 
 gcc program.c -o program
 
-Step 4: Run
+4. Run
 
 Windows
 
@@ -592,9 +571,9 @@ Linux / macOS
 
 ./program
 
-Example
+💻 Example
 
-If the file name is:
+If the file is:
 
 stack.c
 
@@ -606,35 +585,31 @@ Run on Windows:
 
 stack.exe
 
-Run on Linux/macOS:
+Run on Linux:
 
 ./stack
 
-Learning Purpose
+🎓 Learning Purpose
 
-These programs are created for educational and practical learning purposes.
+These programs are useful for:
 
-They can be useful for:
+College practicals
 
-College Practicals
+Data Structures lab work
 
-Lab Assignments
+C programming practice
 
-C Programming Practice
+Viva preparation
 
-Data Structures Practice
+Understanding basic data structures
 
-Viva Preparation
+Understanding sorting and searching algorithms
 
-Exam Preparation
-
-Beginner DSA Learning
-
-Practical List
+📝 Practical List 01–17
 
 01. Stack
 02. Double Stack
-03. Infix to Suffix Expression
+03. Infix to Suffix
 04. Simple Queue
 05. Double Queue
 06. Circular Queue
@@ -648,13 +623,13 @@ Practical List
 14. Quick Sort
 15. Radix Sort
 16. Heap Sort
-17. Linear and Binary Search
+17. Linear & Binary Search
 
-Goal
+🎯 Goal
 
-The goal of this repository is to maintain Data Structures practical programs in C in one place and make them easy to understand, practice, and revise.
+The main goal of this repository is to provide simple, practical and beginner-friendly C programs for learning Data Structures.
 
-Author
+👨‍💻 Author
 
 Vijay Gohil
 
@@ -662,12 +637,15 @@ GitHub:
 
 https://github.com/GohilVijay07
 
-Support
+Repository:
 
-If this repository helps you in learning Data Structures, consider giving the repository a ⭐ Star.
+https://github.com/GohilVijay07/Data-Structur
 
-Note
+⭐ Support
 
-This repository is created for educational and practical learning purposes.
+If this repository helps you in your practical work or learning, you can Star ⭐ the repository on GitHub.
 
-The programs are kept simple and beginner-friendly for students who are learning Data Structures using the C programming language.
+📌 Note
+
+These programs are prepared for educational and practical purposes.
+You can modify the programs according to your college requirements.
